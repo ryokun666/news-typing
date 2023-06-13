@@ -1,0 +1,12 @@
+/* 既存項目の変更例 */
+.done {
+  /* background-color: grey; 元々の設定:背景色を灰色にする */
+  color: lightgray;
+  /* 例えば打ち終わった文字を薄くする */
+}
+
+/* 新規項目の作成例 */
+#key_candidate {
+  visibility: hidden;
+  /* 例えばこれから打つキーを隠す */
+}
