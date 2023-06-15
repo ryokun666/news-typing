@@ -1,38 +1,53 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+# インストール方法
+プロジェクトのインストール方法を記載してください。これには依存関係のインストール、環境変数の設定、データベースの設定などが含まれる可能性があります。
+```
+git clone https://github.com/ryokun666/news-typing-frontend.git
+cd news-typing-frontend
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# 使用方法
+```
+npm run start
+```
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## APIキーの取得
+- [News API](https://newsapi.org/)
+- [gooラボAPI](https://labs.goo.ne.jp/apiusage/)
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+# 概要
+News APIとgooのかな変換APIを用いてユーザがプレイする度に最新ニュースを取得し、その記事内容をタイピングゲームとして遊ぶことができる。
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+# 機能
+- 簡易ユーザ登録
+- リアルタイムニュースタイピング
+- 難易度選択
+- ニュースカテゴリ選択
+- 時間設定
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+# 実装予定機能
+- トップページで簡単なユーザ登録を行い、好成績を残せたらランキングに残せるようにする。
+→バックエンド側でDB接続の実装からをおこなう。
+- 適切なエラーハンドリングを行う
 
-## Learn More
+# 技術
+## 言語
+JavaScript
+└将来的にTypeScriptに移管したい
 
-To learn more about Next.js, take a look at the following resources:
+## フレームワーク
+フロントエンド：Next.js
+[バックエンド](https://github.com/ryokun666/news-typing-backend)：Node.js
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## デプロイ
+Vercel
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+# デザイン案
+## ロゴ（仮）
+![速打！](https://github.com/ryokun666/news-typing-frontend/assets/113868184/ca825307-12ea-4fca-bf72-8b15808b3b84)
 
-## Deploy on Vercel
+![messageImage_1686579409374](https://github.com/ryokun666/news-typing-frontend/assets/113868184/722b1b6d-e6cf-4e26-b0e9-2a3e30fabee8)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## デモ動画（2023/6/13時点）
+https://github.com/ryokun666/news-typing-frontend/assets/113868184/4c94de0f-6ead-4ce7-8ba8-6c7d48345dad
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
